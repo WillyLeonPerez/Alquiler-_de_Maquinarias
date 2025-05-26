@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Raw Construc-Rent</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"></button>
+                <a href="#" class="login-btn" id="loginBtn">Iniciar Sesión</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="logo">Raw Construc-Rent</div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="alquiler.html">Alquiler</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="catalog-header">
+            <h1>Catálogo de Maquinaria</h1>
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="excavadoras">Excavadoras</button>
+                <button class="category-btn" data-category="volquetes">Volquetes</button>
+                <button class="category-btn" data-category="gruas">Grúas</button>
+                <button class="category-btn" data-category="otros">Otros</button>
+            </div>
+        </div>
+        
+        <!-- Excavadoras Section -->
+        <section class="category-section" id="excavadoras">
+            <h2>Excavadoras</h2>
+            <div class="catalog-grid">
+                <div class="machinery-card" data-category="excavadoras">
+                    <div class="machinery-image">
+                        <img src="excavadoracat.jpeg" alt="EXCAVADORACAT">
+                    </div>
+                    <div class="machinery-info">
+                        <h3>Excavadora CAT 320D</h3>
+                        <p>Excavadora de 20 toneladas, ideal para construcción y movimiento de tierra. Motor diésel de alta eficiencia.</p>
+                        <div class="specs">
+                            <span>Peso: 20 ton</span>
+                            <span>Potencia: 110 HP</span>
+                        </div>
+                        <div class="price">S/. 350/día</div>
+                        <a href="alquiler.html" class="btn-primary">Alquilar</a>
+                    </div>
+                </div>
+                
+                <div class="machinery-card" data-category="excavadoras">
+                    <div class="machinery-image">
+                        <img src="miniexcavadora.jpeg" alt="MiniExcavadora">
+                    </div>
+                    <div class="machinery-info">
+                        <h3>Mini Excavadora Kubota U17</h3>
+                        <p>Mini excavadora de 1.7 toneladas, perfecta para trabajos en espacios reducidos.</p>
+                        <div class="specs">
+                            <span>Peso: 1.7 ton</span>
+                            <span>Potencia: 15 HP</span>
+                        </div>
+                        <div class="price">S/. 180/día</div>
+                        <a href="alquiler.html" class="btn-primary">Alquilar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Volquetes Section -->
+        <section class="category-section" id="volquetes">
+            <h2>Volquetes</h2>
+            <div class="catalog-grid">
+                <div class="machinery-card" data-category="volquetes">
+                    <div class="machinery-image">
+                        <img src="volvo.jpg" alt="Volquete Volvo FM">
+                    </div>
+                    <div class="machinery-info">
+                        <h3>Volquete Volvo FM</h3>
+                        <p>Camión volquete de 10m³, perfecto para transporte de materiales de construcción y escombros.</p>
+                        <div class="specs">
+                            <span>Capacidad: 10 m³</span>
+                            <span>Potencia: 350 HP</span>
+                        </div>
+                        <div class="price">S/. 280/día</div>
+                        <a href="alquiler.html" class="btn-primary">Alquilar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Grúas Section -->
+        <section class="category-section" id="gruas">
+            <h2>Grúas</h2>
+            <div class="catalog-grid">
+                <div class="machinery-card" data-category="gruas">
+                    <div class="machinery-image">
+                        <img src="gruatelescopica.jpg" alt="Grúa Telescópica">
+                    </div>
+                    <div class="machinery-info">
+                        <h3>Grúa Telescópica 25T</h3>
+                        <p>Grúa telescópica de 25 toneladas con alcance de 30 metros. Incluye operador certificado.</p>
+                        <div class="specs">
+                            <span>Capacidad: 25 ton</span>
+                            <span>Alcance: 30 m</span>
+                        </div>
+                        <div class="price">S/. 450/día</div>
+                        <a href="alquiler.html" class="btn-primary">Alquilar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Otros Section -->
+        <section class="category-section" id="otros">
+            <h2>Otros Equipos</h2>
+            <div class="catalog-grid">
+                <div class="machinery-card" data-category="otros">
+                    <div class="machinery-image">
+                        <img src="compresor.jpg" alt="Compresor Atlas Copco">
+                    </div>
+                    <div class="machinery-info">
+                        <h3>Compresor Atlas Copco</h3>
+                        <p>Compresor de aire de 185 CFM, ideal para herramientas neumáticas y equipos de perforación.</p>
+                        <div class="specs">
+                            <span>Flujo: 185 CFM</span>
+                            <span>Presión: 7 bar</span>
+                        </div>
+                        <div class="price">S/. 120/día</div>
+                        <a href="alquiler.html" class="btn-primary">Alquilar</a>
+                    </div>
+                </div>
+                
+                <div class="machinery-card" data-category="otros">
+                    <div class="machinery-image">
+                        <img src="bulldozerr.jpeg" alt="Bulldozer D6T">
+                    </div>
+                    <div class="machinery-info">
+                        <h3>Bulldozer D6T</h3>
+                        <p>Bulldozer de alta potencia para nivelación de terrenos y movimiento de grandes volúmenes de tierra.</p>
+                        <div class="specs">
+                            <span>Peso: 22 ton</span>
+                            <span>Potencia: 215 HP</span>
+                        </div>
+                        <div class="price">S/. 420/día</div>
+                        <a href="alquiler.html" class="btn-primary">Alquilar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Mismo footer que en index.html -->
+    </footer>
+
+    <!-- Login Modal -->
+    <!-- Mismo modal que en index.html -->
+
+    <script src="js/main.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>

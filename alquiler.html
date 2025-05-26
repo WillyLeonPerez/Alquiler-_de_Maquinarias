@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler - Raw Construc-Rent</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/alquiler.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle"></button>
+                <a href="#" class="login-btn" id="loginBtn">Iniciar Sesión</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="logo">Raw Construc-Rent</div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="alquiler.html">Alquiler</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="rental-header">
+            <h1>Solicitar Alquiler</h1>
+        </div>
+        
+        <div class="form-container">
+            <form id="rentalForm">
+                <div class="form-group">
+                    <label for="machinery">Seleccionar Maquinaria</label>
+                    <select id="machinery" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="excavadora-cat-320d">Excavadora CAT 320D - S/. 350/día</option>
+                        <option value="mini-excavadora">Mini Excavadora Kubota U17 - S/. 180/día</option>
+                        <option value="volquete-volvo">Volquete Volvo FM - S/. 280/día</option>
+                        <option value="grua-telescopica">Grúa Telescópica 25T - S/. 450/día</option>
+                        <option value="compresor">Compresor Atlas Copco - S/. 120/día</option>
+                        <option value="bulldozer">Bulldozer D6T - S/. 420/día</option>
+                    </select>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="startDate">Fecha de Inicio</label>
+                        <input type="date" id="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">Fecha de Fin</label>
+                        <input type="date" id="endDate" required>
+                    </div>
+                </div>
+                
+                <div id="priceEstimate" class="price-estimate" style="display: none;">
+                    <strong>Precio Estimado: <span id="estimatedPrice">S/. 0</span></strong><br>
+                    <small><span id="rentalDays">0</span> días × S/. <span id="dailyPrice">0</span>/día</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="location">Ubicación del Proyecto</label>
+                    <input type="text" id="location" placeholder="Ingrese la dirección completa" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact">Teléfono de Contacto</label>
+                    <input type="tel" id="contact" placeholder="Número de teléfono" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="observations">Observaciones</label>
+                    <textarea id="observations" rows="4" placeholder="Detalles adicionales sobre el proyecto o requerimientos especiales"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Solicitar Cotización</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Mismo footer que en index.html -->
+    </footer>
+
+    <!-- Login Modal -->
+    <!-- Mismo modal que en index.html -->
+
+    <script src="js/main.js"></script>
+    <script src="js/alquiler.js"></script>
+</body>
+</html>
